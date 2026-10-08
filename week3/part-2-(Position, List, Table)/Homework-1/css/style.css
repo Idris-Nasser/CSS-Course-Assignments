@@ -1,0 +1,42 @@
+/* Applay => Position, List in CSS */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    margin: 50px;
+}
+
+div {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+
+.green {
+    background-color: #00897B;
+    left: 30px;
+    top: -10px;
+    z-index: 3;
+}
+
+.red {
+    background-color: #E53935;
+    top: 0px;
+    left: 40px;
+    z-index: 4;
+}
+
+.blue {
+    background-color: #03A9F4;
+    top: -20px;
+    z-index: 2;
+    left: 20px;
+}
+
+.black {
+    background-color: black;
+    top: -10px;
+    left: 20px;
+}

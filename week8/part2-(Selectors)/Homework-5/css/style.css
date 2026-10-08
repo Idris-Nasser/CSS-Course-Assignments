@@ -1,0 +1,4 @@
+/* هنا قمنا بتطبيق اكثر من محدد بنفس السطر لتحديد عناصر بدقة اكثر */
+div:not(.no-need) div:last-child[title]:not(.no-need) {
+    color: red;
+}

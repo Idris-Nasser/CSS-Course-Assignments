@@ -1,0 +1,18 @@
+div {
+    padding: 10px;
+    margin: 10px;
+    color: white;
+    background-color: brown;
+    max-width: 400px;
+}
+
+.one ,
+.two,
+.three {
+    width: fit-content;
+}
+
+.four {
+    overflow: hidden;
+    height: 40px;
+}

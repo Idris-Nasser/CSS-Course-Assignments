@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+/* L letter Format */
+.letter-l {
+    position: relative;
+    width: 250px;
+    height: 465px;
+    padding: 10px;
+}
+
+.letter-l .x {
+    position: absolute;
+    width: 175px;
+    height: 60px;
+    background-color: rgb(44, 44, 44);
+    left: 28%;
+    bottom: 10px;
+}
+
+.letter-l .y {
+    position: absolute;
+    background-color: rgb(44, 44, 44);
+    width: 60px;
+    height: 445px;
+    left: 10px;
+}
+
+/* E letter Format */
+.letter-e {
+    position: relative;
+    padding: 10px;
+    width: 250px;
+    height: 465px;
+}
+
+.letter-e .y {
+    position: relative;
+    background-color: rgb(44, 44, 44);
+    width: 60px;
+    height: 445px;
+}
+
+.letter-e .x1 {
+    position: absolute;
+    background-color: rgb(44, 44, 44);
+    width: 175px;
+    height: 60px;
+    top: 40%;
+    left: 100%;
+}
+
+.letter-e .x2 {
+    position: absolute;
+    background-color: rgb(44, 44, 44);
+    width: 175px;
+    height: 60px;
+    left: 100%;
+    top: 0;
+}
+
+.letter-e .x3 {
+    position: absolute;
+    background-color: rgb(44, 44, 44);
+    width: 175px;
+    height: 60px;
+    bottom: 0;
+    left: 100%;
+}
+
+/* Squer-1 In Letter L Format */
+.letter-l::after {
+    content: '';
+    position: absolute;
+    background-color: orange;
+    width: 40px;
+    height: 40px;
+    transform: translate(10px, 10px);
+    opacity: 0%;
+    animation-name: moveBox1-L;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+
+}
+
+/* Squer-2 In Letter E Format */
+.letter-e::after {
+    content: '';
+    position: absolute;
+    background-color: orange;
+    width: 40px;
+    height: 40px;
+    transform: translate(185px, -435px);
+    animation-name: moveBox2-E;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 3s;
+    animation-direction: alternate;
+    /* يجب تحديد عدد مرات تكرار الانميشن اقل شيء 2 وهو مانفذناه في الكود التالي alternate لكي تعمل */
+    animation-iteration-count: 2;
+}
+
+/* L كود الانيميشن الخاص ب حرف ال */
+@keyframes moveBox1-L {
+    0% {
+        transform: translate(180px, 395px);
+        opacity: 100%;
+    }
+
+    50% {
+        transform: translate(10px, 395px);
+        opacity: 100%;
+    }
+
+    90% {
+        transform: translate(10px, 10px);
+        opacity: 100%;
+    }
+
+    93% {
+        opacity: 50%;
+    }
+
+    95% {
+        opacity: 25%;
+    }
+
+    100% {
+        opacity: 0%;
+    }
+}
+
+/* E كود الانيميشن الخاص ب حرف ال */
+@keyframes moveBox2-E {
+    0% {
+        transform: translate(185px, -435px);
+    }
+
+    30% {
+        transform: translate(10px, -435px)
+    }
+
+    40% {
+        transform: translate(10px, -257px)
+    }
+
+    50% {
+        transform: translate(180px, -257px)
+    }
+
+    60% {
+        transform: translate(10px, -257px)
+    }
+
+    70% {
+        transform: translate(10px, -50px)
+    }
+
+    100% {
+        transform: translate(180px, -50px)
+    }
+}

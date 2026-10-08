@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Make Variable For Properties we use again */
+:root {
+    --color: white;
+    --padding: 10px;
+    --font-weight: bold;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 7% auto 7%;
+    grid-template-areas: "head head head head head head head head head head"
+        "cont cont cont cont cont cont cont cont sid sid"
+        "foot foot foot foot foot foot foot foot foot foot";
+    ;
+    height: 100vh;
+}
+
+header {
+    grid-area: head;
+    background-color: #03a9f4;
+    padding: var(--padding);
+}
+
+section {
+    grid-area: cont;
+    background-color: #ff5722;
+    padding: var(--padding);
+}
+
+aside {
+    grid-area: sid;
+    background-color: #607d8b;
+    padding: var(--padding);
+}
+
+footer {
+    grid-area: foot;
+    background-color: #009688;
+    padding: var(--padding);
+}
+
+/* Use Pseudo Class Becouse Put Text Insid The Element */
+
+header::before {
+    content: "Header";
+    color: var(--color);
+    font-weight: var(--font-weight);
+}
+
+section::before {
+    content: "Container";
+    color: var(--color);
+    font-weight: var(--font-weight);
+}
+
+aside::before {
+    content: "Aside";
+    color: var(--color);
+    font-weight: var(--font-weight);
+}
+
+footer::before {
+    content: "Footer";
+    color: var(--color);
+    font-weight: var(--font-weight);
+}

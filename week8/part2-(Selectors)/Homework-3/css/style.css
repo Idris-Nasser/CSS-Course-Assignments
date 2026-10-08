@@ -1,0 +1,9 @@
+* {
+    box-sizing: border-box;
+}
+
+/* هنا قمنا بعمل الكود الذي يقوم بتحديد العنصر الوحيد بالنسبة لابوه ويقوم بتلوينة باللون الاحمر */
+.baby:only-child {
+    color: red;
+    font-weight: bold;
+}

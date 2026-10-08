@@ -1,0 +1,74 @@
+:root {
+    --elementColor: rgb(193, 194, 193);
+}
+
+
+.logo,
+.links,
+.content,
+.sidebar,
+.footer {
+    background-color: var(--elementColor);
+}
+
+.page {
+    background-color: #eee;
+    width: 800px;
+    height: 370px;
+    padding: 10px;
+    margin: 0px auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 4px;
+}
+
+.logo {
+    padding: 10px 20px;
+    align-self: flex-start;
+}
+
+.links {
+    display: flex;
+    padding: 12px;
+    width: 86%;
+    justify-content: flex-end;
+    align-self: flex-end;
+    margin-top: 0;
+}
+
+.links li {
+    list-style-type: none;
+    margin-left: 10px;
+    font-size: 13px;
+}
+
+.main-area {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 3px;
+}
+
+.footer {
+    display: flex;
+    margin: 15px 5px;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.content {
+    width: 55%;
+    height: 250px;
+    display: inline-block;
+    padding: 5px;
+    margin-left: 2px;
+}
+
+.sidebar {
+    width: 40%;
+    height: 250px;
+    padding: 5px;
+    margin-right: 1px;
+}

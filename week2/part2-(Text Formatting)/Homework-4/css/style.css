@@ -1,0 +1,21 @@
+a {
+    padding: 10px;
+    background-color: #009688;
+    border-bottom: 20px solid rgb(64, 64, 64);
+    color: white;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    font-size: 100px;
+    display: inline-block;
+    width: 400px;
+    height: 150px;
+    text-align: center;
+}
+
+div {
+    width: 400px;
+    margin: 10px auto;
+}
+

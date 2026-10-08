@@ -1,0 +1,39 @@
+:root {
+    --BackgroundColor: #ff5722;
+}
+
+h1 {
+    position: relative;
+    width: 150px;
+    height: 50px;
+    background-color: var(--BackgroundColor);
+    color: white;
+    padding: 20px;
+    margin: 80px auto;
+    text-align: center;
+}
+
+h1::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--BackgroundColor);
+    left: 0px;
+    top: -1px;
+    transform: skew(161deg, 171deg);
+    z-index: -1;
+}
+
+
+h1::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--BackgroundColor);
+    left: 0px;
+    top: 2px;
+    transform: skew(200deg, 191deg);
+    z-index: -1;
+}

@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 10px auto;
+}
+
+.container>div {
+    background-color: #ddd;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+div h3 {
+    color: #009688;
+}
+
+
+/* For Small Screen */
+@media (max-width:767px) {
+    .container div {
+        width: calc(95%/1);
+    }
+
+    div>h3 {
+        color: black;
+    }
+}
+
+/* For Medium Screen */
+@media (min-width:768px) and (max-width:992px) {
+    .container div {
+        width: calc(95%/2);
+    }
+
+    div h3 {
+        color: red;
+    }
+}
+
+/* For Screen Biger Than 993px */
+@media (min-width: 993px) {
+    .container div {
+        width: calc(92%/4);
+    }
+
+    div h3 {
+        color: #009688;
+    }
+}

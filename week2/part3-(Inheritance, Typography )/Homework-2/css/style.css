@@ -1,0 +1,18 @@
+.one {
+  font-family: "Open Sans", sans-serif;
+  /* font-optical-sizing: auto; */
+  font-weight: 300;
+  font-style: italic;
+}
+
+.two {
+    font-family: "Cairo", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.three {
+  font-family: "Jomhuria", serif;
+  font-weight: bold;
+  font-style: normal;
+}

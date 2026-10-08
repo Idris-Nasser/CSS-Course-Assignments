@@ -1,0 +1,30 @@
+/* 
+    Block
+    - Take Full Width If No Width
+    - Add line Break
+    - Respect padding, Margin, Width, Height
+
+    Inline
+    - Allow Elements Beforn And After It
+    - Do Not Line Break
+    - Do Not Respect Width, Height
+    - Respcet Padding, Margin [ Just Left + Right ]
+
+    Inline-Block
+    - Allow Elements Beforn And After It
+    - Respect Padding, Margin, Width, Height
+*/
+
+
+
+/* Any Element With Class Title */
+.title {}
+
+/* Any Element With ID Nav */
+#nav {}
+
+/* Selector Any Div Element In Page */
+div {}
+
+/* Selector Any H2 Element In Page */
+h2 {}

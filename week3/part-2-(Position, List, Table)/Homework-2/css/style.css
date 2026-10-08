@@ -1,0 +1,58 @@
+/* Applay => Position, List in CSS */
+* {
+    box-sizing: border-box;
+}
+
+div {
+    background-color: #ddd;
+    position: relative;
+    width: 400px;
+    margin: 95px auto;
+    padding: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-top-color: #E53935;
+    border-right-color: #03A9F4;
+    border-bottom-color: #E53935;
+    border-left-color: #03A9F4;
+}
+
+.top-left {
+    position: absolute;
+    background: #03A9F4;
+    color: white;
+    padding: 2px 10px;
+    top: -11px;
+    left: -15px;
+    border-right: 2px solid #E53935;
+}
+
+.bottom-left {
+    position: absolute;
+    background: #03A9F4;
+    color: white;
+    padding: 2px 10px;
+    bottom: -12px;
+    left: -16px;
+    border-right: 2px solid #E53935;
+}
+
+.top-right {
+    position: absolute;
+    background: #03A9F4;
+    color: white;
+    padding: 2px 10px;
+    top: -11px;
+    right: -14px;
+    border-left: 2px solid #E53935;
+}
+
+.bottom-right {
+    position: absolute;
+    background: #03A9F4;
+    color: white;
+    padding: 2px 10px;
+    bottom: -12px;
+    right: -16px;
+    border-left: 2px solid #E53935;
+}

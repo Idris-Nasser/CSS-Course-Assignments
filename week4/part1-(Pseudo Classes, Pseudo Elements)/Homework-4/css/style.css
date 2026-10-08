@@ -1,0 +1,34 @@
+body {
+    counter-reset: p;
+}
+
+p {
+    background-color: lightgray;
+    position: relative;
+    padding: 2px 10px;
+    margin: 7px 7px 7px 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p::after {
+    content: "";
+    border: 2px solid red;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+
+p::before {
+    background-color: red;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    width: 30px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -30px;
+    counter-increment: p;
+    content: counter(p);
+}

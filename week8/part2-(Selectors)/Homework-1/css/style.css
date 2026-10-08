@@ -1,0 +1,10 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* To Selector Element Have More Class */
+div.main.red {
+    color: red;
+    font-weight: bold;
+}

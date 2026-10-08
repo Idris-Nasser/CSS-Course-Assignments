@@ -1,0 +1,58 @@
+/* في عالم التصميم DRY (Don't Repeat Yourself) ولكن قمت بتطبيق مفهوم  Global value كان الهدف من هذا التمرين هو تطبيق لمفهوم  */
+
+.arrow {
+    position: relative;
+    background-color: #ddd;
+    padding: 35px;
+    margin: 35px;
+    font-size: 20px;
+
+}
+
+.top::before {
+    content: '';
+    position: absolute;
+    top: -32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 30px solid #ddd;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    border-left-color: transparent;
+}
+
+.right::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(0%, -50%);
+    border: 30px solid #ddd;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+}
+
+.bottom::before {
+    content: '';
+    position: absolute;
+    top: 133%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 30px solid #ddd;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+}
+
+.left::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    transform: translate(-50%, -50%);
+    border: 30px solid #ddd;
+    border-bottom-color: transparent;
+    border-top-color: transparent;
+    border-left-color: transparent;
+}

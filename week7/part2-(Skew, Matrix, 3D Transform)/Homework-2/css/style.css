@@ -1,0 +1,26 @@
+div {
+    width: 200px;
+    height: 100px;
+    padding-left: 20px;
+    margin: 80px auto;
+    background-color: #009688;
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+div::after {
+    content: '';
+    position: absolute;
+    width: 12%;
+    height: 100%;
+    background-color: #009688;
+    left: -15px;
+    top: 0;
+    border-right: 4px solid white;
+    transform: skewX(15deg)
+}

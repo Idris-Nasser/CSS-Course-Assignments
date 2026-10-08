@@ -1,0 +1,19 @@
+div {
+    padding: 15px;
+    margin: 15px;
+    width: 400px;
+    background-color: #eee;
+}
+
+.div2 {
+    width: 400px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+}
+
+.div3 {
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    overflow: hidden;
+}

@@ -1,0 +1,23 @@
+.parent {
+    background-color: rgb(193 194 193);
+    width: 600px;
+    height: 300px;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.parent div {
+    background-color: rgb(35 172 141);
+    color: white;
+    padding: 27px 2px;
+}
+
+.two {
+    align-self: self-start;
+    text-align: center;
+    width: 50%;
+}

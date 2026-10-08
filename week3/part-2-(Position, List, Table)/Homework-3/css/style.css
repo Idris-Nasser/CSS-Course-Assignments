@@ -1,0 +1,52 @@
+/* Applay => Position And List in CSS */
+
+ul {
+    width: 400px;
+    margin: 0 auto;
+    /* background-color: #ddd; */
+}
+
+.html {
+    list-style-type: none;
+    margin-bottom: 20px;
+    background-color: #ddd;
+    padding: 10px;
+}
+
+.html ol li {
+    background-color: white;
+    padding: 5px;
+    margin: 5px;
+}
+
+/* Assignment Class CSS */
+.css {
+    list-style-type: none;
+    margin-bottom: 20px;
+    background-color: #ddd;
+    padding: 10px;
+}
+
+.css ol li {
+    list-style-type: upper-roman;
+    background-color: white;
+    padding: 5px;
+    margin: 5px;
+
+}
+
+/* Assignment Class JavaScript */
+.javascript {
+    list-style-type: none;
+    margin-bottom: 20px;
+    background-color: #ddd;
+    padding: 10px;
+}
+
+.javascript ul li {
+    list-style-position: inside;
+    background-color: white;
+    padding: 5px;
+    margin: 5px -40px;
+    width: 367px;
+}

@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #000;
+    text-shadow: 1px 1px 0 red, 2px 2px 0 blue;
+}
+
+div {
+    width: 261px;
+    padding: 20px;
+    background-color: #eee;
+    border-top: 2px dotted red;
+    border-left: 2px solid red;
+    border-bottom: 2px dotted red;
+    border-right: 2px solid red;
+}
+
+.help {
+    color: white;
+    background-color: rgb(255, 40, 104);
+    padding: 8px 10px;
+    border-radius: 3px;
+    width: 47px;
+    margin: 0px 6px 29px 194px;
+    text-align: center;
+}
+
+div p {
+    color: black;
+    font-weight: bold;
+}

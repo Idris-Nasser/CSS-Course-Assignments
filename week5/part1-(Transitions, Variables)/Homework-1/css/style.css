@@ -1,0 +1,30 @@
+.parent {
+    background-color: #eee;
+    width: 400px;
+    height: 200px;
+    margin: 90px auto;
+    padding: 10px 0;
+    text-align: center;
+    /* selector time the move for parent element */
+    transition: transform 0.5s;
+}
+
+.child-2 {
+    background-color: rgb(181, 180, 180);
+    padding: 10px 20px;
+    margin-top: -90px;
+    width: 80%;
+    display: inline-block;
+    /* selector time move and tiem late for child element */
+    transition: transform 0.5s ease 0.5s;
+}
+
+/* Move Element to Up */
+.parent:hover {
+    transform: translateY(-20px);
+}
+
+/* When parent element move to up the child element move down */
+.parent:hover .child-2 {
+    transform: translateY(20px);
+}

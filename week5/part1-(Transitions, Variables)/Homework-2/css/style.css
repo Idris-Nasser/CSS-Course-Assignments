@@ -1,0 +1,14 @@
+div {
+    width: 400px !important;
+    background-color: #d3d1d1 !important;
+    color: black !important;
+    border: none !important;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0px !important;
+}
+
+div::after {
+    content: "Seek to Know";
+    font-size: 20px;
+}
